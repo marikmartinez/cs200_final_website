@@ -1,0 +1,90 @@
+/*
+CSS Reset
+ */
+
+
+body, header, nav, main, footer, img, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body, header, nav, main, footer, img, h1, h2, h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 0;
+}
+/*
+Headings
+ */
+
+header p {
+    margin: 5px;
+    text-align: left;
+    font-size: 25px;
+    color:#879166;
+}
+h1 {
+    text-align: left;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #32623b;
+}
+
+body, nav, header, main {
+    margin: 100px;
+}
+
+body {
+    background-color: #fefae0;
+    font-size: 25px;
+    text-align: left;
+}
+
+b {
+    color: #dda15e;
+}
+
+body a {
+    color: #606c38;
+}
+
+
+.hobby-list {
+    font-size: 30px;
+    list-style-type: circle;
+}
+
+nav {
+    text-align: left;
+    text-decoration: none;
+}
+
+nav ul {
+    display: block;
+    background-color: #635d5c;
+    border-radius: 17px;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+}
+
+
+nav li a:hover {
+    color: #bfbca6;
+}
+
+
