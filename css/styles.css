@@ -3,7 +3,7 @@ CSS Reset
  */
 
 
-body, header, nav, main, footer, img, h1, h2, h3, ul, li {
+body, header, nav, main, footer, img, h1, h2, h3, ul, li, section, article, aside{
     margin: 0;
     padding: 0;
     border: 0;
@@ -52,6 +52,11 @@ body a {
     color: #606c38;
 }
 
+main {
+    text-align: center;
+}
+
+
 /*
 main h2 {
     text-align: center;
@@ -78,13 +83,7 @@ nav ul {
     border-radius: 17px;
 }
 
-/*
-nav li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 15px 30px;
-}
- */
+
 
 
 nav li a {
@@ -102,6 +101,14 @@ footer {
     text-align: center;
     color: grey;
 }
+
+.green-highlight {
+    display: block;
+    padding: 10px;
+    background-color: #b4c29f;
+}
+
+
 /*
 Style rules for mobile viewport
  */
@@ -111,41 +118,51 @@ header {
     position: sticky;
     top: 0;
     background-color: #fefae0;
-    height: 100px;
-    font-size: 12px;
+    height: 110px;
 }
 
+header h1 {
+    font-size: 30px;
+
+}
 header p {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 nav li {
     list-style-type: none;
     padding: 7px 30px;
     text-align: center;
+    border-bottom: 1px solid #fff;
 }
 
-body {
-    font-size: 20px;
+nav li:last-child {
+    border-bottom: none;
 }
+
 
 main {
-    padding-top: 15px;
-    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
 }
 
 main h2 {
-     text-align: center;
      font-size: 30px;
  }
 
-.simple-list {
+article {
+    padding: 2%;
+}
+
+
+.simple-style-list {
     padding: 15px;
     font-size: 20px;
-    list-style-type: circle;
-    list-style: inside;
+    list-style-type: none;
     text-align: center;
 }
+
+
 
 /*
 Show mobile class, hide tablet-desktop class
@@ -158,3 +175,158 @@ Show mobile class, hide tablet-desktop class
     display: none;
 }
 
+/*
+Media Query for Tablet Viewport
+ */
+
+@media screen and (min-width: 630px) {
+    header {
+        /*position: -webkit-sticky; Causes an error, commented out*/
+        position: static;
+        padding: 10px;
+        height: 105px;
+    }
+
+    header h1 {
+       font-size: 40px;
+    }
+
+    header p {
+        font-size: 25px;
+    }
+
+    main {
+        padding-top: 10px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 15px 30px;
+        border-bottom: none;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
+
+    main h3 {
+        font-size: 25px;
+    }
+
+    .simple-style-list {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    #langs, #exp, #skills {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exp {
+        background-color: white;
+        padding: 2px;
+    }
+
+    footer {
+        clear: left;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        /*position: -webkit-sticky; Causes an error, commented out*/
+        position: static;
+        padding: 20px;
+        height: 135px;
+    }
+
+    header h1 {
+        font-size: 55px;
+    }
+
+    header p {
+        font-size: 30px;
+    }
+
+    main {
+        padding-top: 10px;
+    }
+
+    main h3 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 30px;
+    }
+
+    nav {
+        text-align: center;
+    }
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 25px 50px;
+        border-bottom: none;
+    }
+
+    nav li a {
+       font-size: 30px;
+    }
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    .simple-style-list {
+        padding: 15px;
+        font-size: 28px;
+    }
+
+
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    #langs, #exp, #skills {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exp {
+        background-color: white;
+        padding: 2px;
+    }
+
+    footer {
+        clear: left;
+        padding: 10px;
+    }
+}
