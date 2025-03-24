@@ -3,7 +3,7 @@ CSS Reset
  */
 
 
-body, header, nav, main, footer, img, h1, h2, h3 {
+body, header, nav, main, footer, img, h1, h2, h3, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
@@ -34,13 +34,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #32623b;
 }
 
-body, nav, header, main {
-    margin: 100px;
+body, nav, header, main, footer {
+    margin: 20px;
 }
 
 body {
     background-color: #fefae0;
-    font-size: 25px;
+    /*font-size: 25px;*/
     text-align: left;
 }
 
@@ -52,14 +52,23 @@ body a {
     color: #606c38;
 }
 
-
-.hobby-list {
-    font-size: 30px;
-    list-style-type: circle;
+/*
+main h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
 }
 
+.hobby-list {
+    padding: 20px;
+    font-size: 30px;
+    list-style-type: circle;
+    list-style: inside;
+    text-align: center;
+}
+*/
+
 nav {
-    text-align: left;
     text-decoration: none;
 }
 
@@ -69,22 +78,83 @@ nav ul {
     border-radius: 17px;
 }
 
+/*
 nav li {
     display: inline-block;
     list-style-type: none;
     padding: 15px 30px;
 }
+ */
+
 
 nav li a {
     text-decoration: none;
     font-size: 25px;
     color: white;
-    padding: 5px;
 }
-
 
 nav li a:hover {
     color: #bfbca6;
 }
 
+footer {
+    font-size: small;
+    text-align: center;
+    color: grey;
+}
+/*
+Style rules for mobile viewport
+ */
+header {
+    /*position: -webkit-sticky; Causes an error, commented out*/
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #fefae0;
+    height: 100px;
+    font-size: 12px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 7px 30px;
+    text-align: center;
+}
+
+body {
+    font-size: 20px;
+}
+
+main {
+    padding-top: 15px;
+    text-align: center;
+}
+
+main h2 {
+     text-align: center;
+     font-size: 30px;
+ }
+
+.simple-list {
+    padding: 15px;
+    font-size: 20px;
+    list-style-type: circle;
+    list-style: inside;
+    text-align: center;
+}
+
+/*
+Show mobile class, hide tablet-desktop class
+ */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
 
