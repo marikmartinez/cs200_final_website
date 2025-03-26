@@ -236,20 +236,15 @@ Media Query for Tablet Viewport
         display: block;
     }
 
-    #langs, #exp, #skills {
-        width: 29%;
+    article {
+        width: 43%;
         float: left;
-        margin: 0 2%;
-    }
-
-    #exp {
-        background-color: white;
-        padding: 2px;
+        height: 160px;
     }
 
     footer {
         clear: left;
-        padding: 10px;
+        padding: 100px;
     }
 }
 
@@ -314,15 +309,10 @@ Media Query for Tablet Viewport
         display: block;
     }
 
-    #langs, #exp, #skills {
-        width: 29%;
-        float: left;
-        margin: 0 2%;
-    }
-
-    #exp {
-        background-color: white;
-        padding: 2px;
+    article {
+        width: 27%;
+        height: 140px;
+        padding-bottom: 100px;
     }
 
     footer {
