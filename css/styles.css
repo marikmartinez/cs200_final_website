@@ -223,7 +223,7 @@ Media Query for Tablet Viewport
 
     .simple-style-list {
         padding: 15px;
-        font-size: 20px;
+        font-size: 25px;
     }
 
 
@@ -269,7 +269,7 @@ Media Query for Tablet Viewport
     }
 
     main h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     main p {
