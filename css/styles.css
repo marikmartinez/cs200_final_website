@@ -19,12 +19,15 @@ body {
 Headings
  */
 
+
 header p {
     margin: 5px;
     text-align: left;
     font-size: 25px;
     color:#879166;
 }
+
+
 h1 {
     text-align: left;
 }
@@ -57,6 +60,8 @@ main {
 }
 
 
+
+
 /*
 main h2 {
     text-align: center;
@@ -75,6 +80,7 @@ main h2 {
 
 nav {
     text-decoration: none;
+    padding-top: 50px;
 }
 
 nav ul {
@@ -129,6 +135,14 @@ header p {
     font-size: 19px;
 }
 
+.header-img {
+    float: right;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
 nav li {
     list-style-type: none;
     padding: 7px 30px;
@@ -150,10 +164,12 @@ main h2 {
      font-size: 30px;
  }
 
-article {
-    padding: 2%;
+aside {
+    display: block;
+    padding: 10px;
+    box-shadow: #c97961 1px 0 10px;
+    color: #4f4d4d;
 }
-
 
 .simple-style-list {
     padding: 15px;
@@ -161,7 +177,6 @@ article {
     list-style-type: none;
     text-align: center;
 }
-
 
 
 /*
@@ -180,6 +195,15 @@ Media Query for Tablet Viewport
  */
 
 @media screen and (min-width: 630px) {
+    .grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        padding-bottom: 50px;
+    }
+
+
     header {
         /*position: -webkit-sticky; Causes an error, commented out*/
         position: static;
@@ -193,6 +217,14 @@ Media Query for Tablet Viewport
 
     header p {
         font-size: 25px;
+    }
+
+    .header-img {
+        float: right;
+        border-radius: 50%;
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
     }
 
     main {
@@ -227,7 +259,7 @@ Media Query for Tablet Viewport
     }
 
 
-    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    /* Show tablet-desktop class, hide mobile class*/
     .mobile {
         display: none;
     }
@@ -236,11 +268,6 @@ Media Query for Tablet Viewport
         display: block;
     }
 
-    article {
-        width: 43%;
-        float: left;
-        height: 160px;
-    }
 
     footer {
         clear: left;
@@ -249,6 +276,14 @@ Media Query for Tablet Viewport
 }
 
 @media screen and (min-width: 1000px) {
+    .grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+        padding-bottom: 50px;
+    }
+
     header {
         /*position: -webkit-sticky; Causes an error, commented out*/
         position: static;
@@ -262,6 +297,14 @@ Media Query for Tablet Viewport
 
     header p {
         font-size: 30px;
+    }
+
+    .header-img {
+        float: right;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 
     main {
@@ -299,8 +342,6 @@ Media Query for Tablet Viewport
         font-size: 28px;
     }
 
-
-    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
     .mobile {
         display: none;
     }
@@ -309,11 +350,6 @@ Media Query for Tablet Viewport
         display: block;
     }
 
-    article {
-        width: 27%;
-        height: 140px;
-        padding-bottom: 100px;
-    }
 
     footer {
         clear: left;
