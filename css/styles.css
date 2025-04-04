@@ -61,7 +61,6 @@ main {
 
 
 
-
 /*
 main h2 {
     text-align: center;
@@ -114,6 +113,10 @@ footer {
     background-color: #b4c29f;
 }
 
+#email-form {
+    background-color: #f2eee6;
+    margin: auto 40px;
+}
 
 /*
 Style rules for mobile viewport
@@ -272,6 +275,12 @@ Media Query for Tablet Viewport
     footer {
         clear: left;
         padding: 100px;
+    }
+
+    #email-form {
+        display: block;
+        background-color: #f2eee6;
+        margin: auto 30px;
     }
 }
 
