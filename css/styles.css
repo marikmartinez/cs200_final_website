@@ -118,6 +118,11 @@ footer {
     margin: auto 40px;
 }
 
+figcaption {
+    font-size: small;
+    color: #92969c;
+}
+
 /*
 Style rules for mobile viewport
  */
