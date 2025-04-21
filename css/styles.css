@@ -135,6 +135,11 @@ header {
     height: 110px;
 }
 
+#mainHeader {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
 header h1 {
     font-size: 30px;
 
