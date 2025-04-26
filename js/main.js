@@ -1,3 +1,4 @@
-window.onload = () => {
-    document.getElementById('mainHeader').style.opacity = 1;
+window.onload = function ()  {
+document.getElementById('mainHeader').style.opacity = 1;
+
 };
